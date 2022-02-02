@@ -1,7 +1,11 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-// Put the person struct here
+struct Person{
+  string firstName;
+  string secondName;
+};
 
 
 
@@ -9,7 +13,16 @@ using namespace std;
 
 
 int main() {
-	// Create two instances of person here, and assign the names.
+	Person p1;
+  Person p2;
+
+  p1.firstName = "Dorian";
+  p1.secondName = "Gray";
+  p2.firstName = "Charlie";
+  p2.secondName = "Brown";
+
+  cout << p1.firstName << " " << p1.secondName << endl;
+  cout << p2.firstName << " " << p2.secondName << endl;
 
 
 
