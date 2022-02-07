@@ -10,14 +10,12 @@ struct Point {
 };
 Point::Point() {
 	// Normally, you do not print in a constructor
-	cout << "In the default constructor" << endl;
 	x = 0;
 	y = 0;
 }
 
 Point::Point(double xVal, double yVal) {
 	// Normally, you do not print in a constructor
-	cout << "In the other constructor" << endl;
 	x = xVal;
 	y = yVal;
 }
