@@ -32,7 +32,14 @@ int main() {
     Point a(3,9);
     cout << "a";
     PrintPoint(a);
+    /*
 	SwapXY(a);
+  */
+  
+  int temp = a.x;
+  a.x = a.y;
+  a.y = temp;
+  
 	cout << "a after calling SwapXY" << endl;
     PrintPoint(a);
     return 0;
